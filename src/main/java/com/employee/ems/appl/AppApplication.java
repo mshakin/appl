@@ -18,13 +18,13 @@ public class AppApplication implements CommandLineRunner {
 
     @Override
 	public void run(String... args) throws Exception{
-          //Employee employee1 = new Employee("Shakin","Sha","ss@gmail.com");
-		//  employeeRepository.save(employee1);
-
-		// Employee employee2 = new Employee("xxx","yyy","xs@gmail.com");
-		//employeeRepository.save(employee2);
-
-		//Employee employee3 = new Employee("Tony","Stark","ts@gmail.com");
-		//employeeRepository.save(employee3);
+//          Employee employee1 = new Employee("Shakin","Sha","ss@gmail.com");
+//		  employeeRepository.save(employee1);
+//
+//		 Employee employee2 = new Employee("xxx","yyy","xs@gmail.com");
+//		employeeRepository.save(employee2);
+//
+//		Employee employee3 = new Employee("Tony","Stark","ts@gmail.com");
+//		employeeRepository.save(employee3);
   }
 }

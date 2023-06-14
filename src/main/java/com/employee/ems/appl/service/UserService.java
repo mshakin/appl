@@ -8,4 +8,10 @@ package com.employee.ems.appl.service;
 
 public interface UserService {
     List<Employee> getAllEmployees();
+    Employee saveEmployee(Employee employee);
+    Employee getEmployeeById(Long id);
+    Employee updateEmployee(Employee employee);
+    void deleteEmployeeById(Long id);
+
+
 }
