@@ -1,6 +1,7 @@
 package com.employee.ems.appl;
 
 import com.employee.ems.appl.entity.Employee;
+import com.employee.ems.appl.repository.DepartmentRepository;
 import com.employee.ems.appl.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -15,7 +16,8 @@ public class AppApplication implements CommandLineRunner {
 	}
 	@Autowired
 	private EmployeeRepository employeeRepository;
-
+	@Autowired
+	private DepartmentRepository departmentRepository;
     @Override
 	public void run(String... args) throws Exception{
 //          Employee employee1 = new Employee("Shakin","Sha","ss@gmail.com");

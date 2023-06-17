@@ -28,10 +28,11 @@
 
 
   <div  th:action ="@{/employees/{id}(id=${employee.id})}" th:Object="${employee}" method="get">
-      <h6>Employee ID: <span th:text ="${employee.id}"></span></h6>
+      <h6>Employee Id: <span th:text = "${employee.Id}"></span></h6>
       <h6>First Name: <span th:text = "${employee.firstName}"></span></h6>
       <h6>Last Name: <span th:text = "${employee.lastName}"></span></h6>
       <h6>Email Id: <span th:text = "${employee.EmailId}"></span></h6>
+      <h6>Department: <span th:text = "${employee.department.dpt_name}"></span></h6>
  </div>
 
  <div class="box-footer">

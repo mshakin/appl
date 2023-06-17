@@ -3,7 +3,9 @@ package com.employee.ems.appl.service.impl;
 
 
 
+        import com.employee.ems.appl.entity.Department;
         import com.employee.ems.appl.entity.Employee;
+        import com.employee.ems.appl.repository.DepartmentRepository;
         import com.employee.ems.appl.repository.EmployeeRepository;
         import com.employee.ems.appl.service.UserService;
         import org.springframework.stereotype.Service;
@@ -12,10 +14,17 @@ package com.employee.ems.appl.service.impl;
 @Service
 public class ServiceImpl implements UserService {
     private EmployeeRepository employeeRepository;
-
-    public ServiceImpl(EmployeeRepository employeeRepository) {
+    private DepartmentRepository departmentRepository;
+    public ServiceImpl(EmployeeRepository employeeRepository, DepartmentRepository departmentRepository) {
         super();
         this.employeeRepository = employeeRepository;
+        this.departmentRepository= departmentRepository;
+    }
+
+
+    @Override
+    public List<Department> listAll() {
+        return departmentRepository.findAll();
     }
 
     @Override
